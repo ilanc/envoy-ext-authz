@@ -33,3 +33,8 @@ curl -v -H "Authorization: Basic cmlja2xlZToxMjM0NTY=" localhost:8000/service/2 
   - i.e. publicly exposed host ports reflect with arrow as: `0.0.0.0:8000->80/tcp`
     - the host port is before the arrow (i.e. `8000` not `80`)
   - and internal container ports without arrow as `80/tcp`
+
+## prettier
+
+- front-envoy.yaml and service-envoy.yaml have different indenting to default prettier rules
+- prettier-fied and rebuilt and all still works. Even tested `docker-compose scale service1=3` and it works like a charm!
